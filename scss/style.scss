@@ -1,0 +1,25 @@
+/*-------------------------------------------------
+    [Master Style sheet]
+
+    Project:    Product Landing page
+    Version:    1.0.0 
+-------------------------------------------------*/
+
+/* === Import template variables === */
+
+@import "var"
+
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  body {
+    background-color: darkslategray;
+  }
+}

@@ -1,0 +1,86 @@
+////////// COLOR SYSTEM //////////
+
+$theme-colors: (
+  primary: #3c37f1,
+  secondary: #1998ff,
+  success: #00d663,
+  info: #00b3ff,
+  warning: #ffe671,
+  danger: #ff696d,
+  light: #506690,
+  dark: #000000,
+);
+
+$content-bg: #fff;
+$border-color: #f1efef;
+
+////////// SOCIAL COLORS //////////
+
+$social-colors: (
+  twitter: #2caae1,
+  facebook: #3b579d,
+  google: #dc4a38,
+  linkedin: #0177b5,
+  pinterest: #cc2127,
+  youtube: #e52d27,
+  github: #333333,
+  behance: #1769ff,
+  dribbble: #ea4c89,
+  reddit: #ff4500,
+);
+
+////////// FONTS //////////
+
+$type1: ;
+$type1: ;
+
+$default-font-size: ;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$body-color: ;
+
+////////// HEADER //////////
+
+$header-bg: url("../images/banner-bg.svg");
+$header-color: #fff;
+$nav-link-color: #fff;
+$nav-link-hover-color: #fff;
+$nav-link-active-color: #fff;
+$nav-link-font-size: 0.937rem;
+$header-padding-x: 0;
+$header-padding-y: 0px;
+$nav-link-padding: 0.625rem 1.25rem;
+$navbar-bg: theme-color(secondary);
+$active-bg: rgba(0, 0, 0, 0.2);
+$mobile-menu-width: 280px;
+$mobile-header-height: 71px;
+$mobile-overlay-bg: rgba(0, 0, 0, 0.8);
+
+////////// BUTTONS //////////
+
+$btn-border-radius: 50px;
+$btn-font-size: 0.875rem;
+$btn-padding-y: 11px;
+$btn-padding-x: 30px;
+
+////////// FORMS //////////
+
+$form-border-radius: 50px;
+$form-font-size: 0.875rem;
+$form-padding-y: 11px;
+$form-padding-x: 30px;
+
+$input-padding-y: 1.25rem;
+$input-padding-x: 1.25rem;
+$input-placeholder-color: #919aa3;
+$input-font-size: 14px;
+
+////////// FOOTER //////////
+
+$footer-color: #e5e5e5;
+$footer-bg: rgba(60, 55, 241, 0.8);
+
+////////// TRANSITION //////////
+
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
