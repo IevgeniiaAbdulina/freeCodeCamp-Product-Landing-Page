@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>freeCodeCamp - Product Landing Page</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/favicon.svg">
 </head>
 
 <body>
@@ -13,31 +14,130 @@
         <img id="header-img" src="">
         <nav id="nav-bar">
             <ul class="nav-links">
-                <li><a class="nav-link" href="#video">
-                        Link 1
+                <li><a class="nav-link" href="#home">
+                        Home
                     </a></li>
-                <li><a class="nav-link" href="#form">
-                        Link 2
+                <li><a class="nav-link" href="#services">
+                        Services
                     </a></li>
-                <li><a class="nav-link" href="#footer">
-                        Link 3
+                <li><a class="nav-link" href="#about">
+                        About
                     </a></li>
             </ul>
         </nav>
-
-        <video src="#" id="video" controls>
-            <source src="" type="video/mp4">
-            <source src="" type="video/ogg">
-            Sorry, but your browser does not support this video format.
-        </video>
-
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" id="email" name="email" placeholder="Enter your Email here..." required>
-            <input type="submit" id="submit" value="Send">
-        </form>
-
-        <div id="footer">Footer</div>
     </header>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="banner">
+                <div class="banner-text">
+                    <h1 class="banner-title">Brand Identity and UX Design Agency</h1>
+                    <p class="banner-subtitle">We're a brand strategy and digital design agency, building brands
+                        that
+                        matter in culture.</p>
+                </div>
+                <div class="banner-img">
+                    <img src="./img/group.png" alt="Illustration of the three people with a sand clock">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="our-services">
+        <div class="container">
+            <div class="services-header">
+                <p class="services-subtitle">We're offering</p>
+                <h2 class="services-title">Creative Digital Agency</h2>
+            </div>
+            <div class="services-box">
+                <img src="" alt="">
+                <h6></h6>
+                <p></p>
+            </div>
+            <div class="services-box">
+                <img src="" alt="">
+                <h6></h6>
+                <p></p>
+            </div>
+            <div class="services-box">
+                <img src="" alt="">
+                <h6></h6>
+                <p></p>
+            </div>
+            <div class="services-box">
+                <img src="" alt="">
+                <h6></h6>
+                <p></p>
+            </div>
+            <div class="services-box">
+                <img src="" alt="">
+                <h6></h6>
+                <p></p>
+            </div>
+            <div class="services-box">
+                <img src="" alt="">
+                <h6></h6>
+                <p></p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h5>Our work process</h5>
+                    <h3>Discover new idea with us!</h3>
+                    <h5>Imagination will take us everywhere</h5>
+                    <p>Lorem</p>
+                    <div class="list-item">
+                        <img src="" alt="checkbox icon">
+                        <p>Lorem</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="" alt="checkbox icon">
+                        <p>Lorem</p>
+                    </div>
+                    <div class="list-item">
+                        <img src="" alt="checkbox icon">
+                        <p>Lorem</p>
+                    </div>
+                </div>
+                <div class="about-video">
+                    <video src="#" id="video" controls>
+                        <source src="" type="video/mp4">
+                        <source src="" type="video/ogg">
+                        Sorry, but your browser does not support this video format.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h5>Are you ready? Let's work!</h5>
+
+                </div>
+                <div class="contact-form">
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <input type="email" id="email" name="email" placeholder="Enter your Email here..." required>
+                        <input type="submit" id="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="attribution">Challenge by <a href="" target="_blank">freeCodeCamp</a>. Coded by <a href="">Ievgeniia
+            Abdulina</a>.
+
+    </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
