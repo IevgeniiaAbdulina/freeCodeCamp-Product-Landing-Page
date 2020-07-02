@@ -1,5 +1,5 @@
 /*-------------------------------------------------
-    [Master Style sheet]
+    [Master Stylesheet]
 
     Project:    Product Landing page
     Version:    1.0.0 
@@ -7,19 +7,17 @@
 
 /* === Import template variables === */
 
-@import "var"
+@import "variables";
 
+/* === Core Styles === */
 
+@import "fonts";
+@import "footer";
+@import "main";
+@import "typography";
+@import "navbar";
 
+/* === Components === */
 
-header {
-  position: fixed;
-  top: 0;
-  display: flex;
-}
-
-@media (max-width: 760px) {
-  body {
-    background-color: darkslategray;
-  }
-}
+@import "components/buttons";
+@import "components/forms";

@@ -31,13 +31,15 @@ $social-colors: (
 
 ////////// FONTS //////////
 
-$type1: ;
-$type1: ;
+$type1: "Montserrat", sans-serif;
+$type2-font-family: "Merriweather", serif;
 
-$default-font-size: ;
+$default-font-size: 16px;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
-$body-color: ;
+$font-weight-black: 900;
+
+$body-color: #000;
 
 ////////// HEADER //////////
 

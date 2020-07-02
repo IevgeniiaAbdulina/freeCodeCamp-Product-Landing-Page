@@ -1,7 +1,40 @@
+/*-------------------------------------------------
+    [Master Stylesheet]
+
+    Project:    Product Landing page
+    Version:    1.0.0 
+-------------------------------------------------*/
+/* === Import template variables === */
+/* === Core Styles === */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow-x: hidden;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
 header {
+  width: 100%;
   position: fixed;
   top: 0;
-  display: flex;
+  background-color: #3c37f1;
+}
+
+.container {
+  width: 80%;
+  padding: 20px 0;
+  margin: 0 auto;
 }
 
 @media (max-width: 760px) {
@@ -9,3 +42,35 @@ header {
     background-color: darkslategray;
   }
 }
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  padding: 10px 20px;
+  transition: all 0.4s;
+  margin: 0 0 0 8px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+nav li:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+}
+
+/* === Components === */
