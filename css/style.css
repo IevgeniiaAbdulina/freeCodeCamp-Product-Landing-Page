@@ -119,6 +119,7 @@ header {
 .about-content {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 0 6.25rem;
 }
 
 .about-content .col-about {
@@ -164,8 +165,82 @@ header {
 }
 
 .about-video iframe {
-  min-width: 360px;
-  min-height: 200px;
+  width: 80%;
+  height: 60%;
+}
+
+.contact {
+  background: #3c37f1 url(../img/footer_bg.svg);
+  background-repeat: repeat-x;
+  color: #e5e5e5;
+  background-position: left bottom;
+  background-size: cover;
+  padding: 0;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.contact-content h3 {
+  margin: 0;
+}
+
+.contact-content .col-contact {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.contact-content .box {
+  padding: 0 14px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form form .col-contact {
+  flex: 0 0 50%;
+  max-width: 50%;
+  align-items: center;
+}
+
+.contact-form form .box {
+  padding: 0 14px;
+  height: 100%;
+}
+
+.contact-form form input {
+  width: 100%;
+  height: auto;
+  padding: 0.75rem;
+  line-height: 1.5;
+  color: #506690;
+  background-color: #fff;
+  border: 1px solid #f1efef;
+  border-radius: 0.25rem;
+  outline: 0;
+}
+
+.contact-form form a {
+  margin-left: 1.875rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.75rem 1.875rem;
+  border-radius: 50px;
+  background-color: #1998ff;
+  position: absolute;
+}
+
+.contact-form form a:hover {
+  background-color: #007ee5;
 }
 
 h1 {

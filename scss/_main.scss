@@ -113,6 +113,7 @@ header {
 .about-content {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 0 6.25rem;
 
   .col-about {
     flex: 0 0 50%;
@@ -161,7 +162,85 @@ header {
   height: 100%;
 
   iframe {
-    min-width: 360px;
-    min-height: 200px;
+    width: 80%;
+    height: 60%;
+  }
+}
+
+// ================= SERVICES SECTION ================= //
+
+.contact {
+  background: $primary url(../img/footer_bg.svg);
+  background-repeat: repeat-x;
+  color: $contact-color;
+  background-position: left bottom;
+  background-size: cover;
+  padding: 0;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 0;
+
+  h3 {
+    margin: 0;
+  }
+
+  .col-contact {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .box {
+    padding: 0 14px;
+  }
+}
+
+.contact-form {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-contact {
+      flex: 0 0 50%;
+      max-width: 50%;
+      align-items: center;
+    }
+
+    .box {
+      padding: 0 14px;
+      height: 100%;
+    }
+
+    input {
+      width: 100%;
+      height: auto;
+      padding: 0.75rem;
+      line-height: 1.5;
+      color: $light;
+      background-color: #fff;
+      border: 1px solid $border-color;
+      border-radius: 0.25rem;
+      outline: 0;
+    }
+
+    a {
+      margin-left: 1.875rem;
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      font-weight: $font-weight-bold;
+      color: #fff;
+      padding: 0.75rem 1.875rem;
+      border-radius: 50px;
+      background-color: $secondary;
+      position: absolute;
+
+      &:hover {
+        background-color: darken($secondary, 10%);
+      }
+    }
   }
 }
