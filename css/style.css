@@ -7,7 +7,7 @@
 /* === Import template variables === */
 /* === Core Styles === */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900");
 * {
   margin: 0;
   padding: 0;
@@ -34,11 +34,8 @@ a {
   text-decoration: none;
 }
 
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  background-color: #3c37f1;
+section {
+  padding: 100px 0 0 0;
 }
 
 .container {
@@ -53,11 +50,17 @@ header {
   }
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #3c37f1;
+}
+
 .home {
   background: url("../img/banner-bg.svg");
   background-repeat: repeat-x;
-  background-position: 0 -10px;
-  padding-top: 100px;
+  background-position: 0 -12px;
 }
 
 .banner {
@@ -89,6 +92,29 @@ header {
   background-color: #007ee5;
 }
 
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-content .col {
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+  text-align: left;
+}
+
+.services-content .col-box {
+  padding: 0 14px;
+}
+
+.services-content .services-box {
+  padding: 10px 100px 40px 0;
+}
+
+.services-content .services-box p {
+  color: #506690;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -102,9 +128,30 @@ h1 {
   }
 }
 
+h3 {
+  font-size: 2.187rem;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0 0 3rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 0 0.5rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: normal;
+  margin: 1.5rem 0 1rem 0;
+}
+
 p {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   margin: 1rem 0 0.5rem 0;
 }
