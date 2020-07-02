@@ -10,12 +10,15 @@
 @import "variables";
 
 /* === Core Styles === */
-
+@import "about";
+@import "contact";
 @import "fonts";
 @import "footer";
+@import "home";
 @import "main";
-@import "typography";
 @import "navbar";
+@import "services";
+@import "typography";
 
 /* === Components === */
 

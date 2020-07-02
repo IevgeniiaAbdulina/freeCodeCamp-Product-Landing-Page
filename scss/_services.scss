@@ -1,0 +1,40 @@
+// ================= SERVICES SECTION ================= //
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  .col {
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+    text-align: left;
+    @media (max-width: 991px) {
+      position: relative;
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .col-box {
+    padding: 0 14px;
+  }
+
+  .services-box {
+    padding: 10px 100px 40px 0;
+    @media (max-width: 991px) {
+      padding: 10px 10px 40px 0;
+    }
+    &:hover {
+      img {
+        filter: grayscale(100%);
+        transition: all $action-transition-duration;
+      }
+    }
+
+    p {
+      color: $light;
+    }
+  }
+}

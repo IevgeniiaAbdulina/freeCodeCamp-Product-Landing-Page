@@ -1,0 +1,57 @@
+// ================= HOME SECTION ================= //
+
+.home {
+  background: $home-bg;
+  background-repeat: repeat-x;
+  background-position: 0 -12px;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem 0 14rem 0;
+  color: $white;
+  @media (max-width: 991px) {
+    padding: 1rem;
+  }
+
+  .banner-text {
+    width: 50%;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    a {
+      position: absolute;
+      text-align: center;
+      font-size: $btn-font-size;
+      line-height: 1.5;
+      font-weight: $font-weight-bold;
+      color: #fff;
+      padding: 12px 30px;
+      margin: 1rem 0 0;
+      border-radius: $btn-border-radius;
+      background-color: $secondary;
+      transition: $action-transition-duration;
+
+      &:hover {
+        background-color: darken($secondary, 10%);
+      }
+    }
+  }
+
+  .banner-img {
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-top: 6rem;
+    }
+
+    img {
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
+}
