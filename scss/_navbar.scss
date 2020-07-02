@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav {
@@ -17,7 +18,6 @@ nav {
     margin: 0 0 0 8px;
 
     a {
-      text-decoration: none;
       color: #fff;
       font-size: 1em;
       font-weight: $font-weight-bold;

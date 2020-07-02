@@ -12,6 +12,13 @@ body {
   font-family: $type1;
   font-size: $default-font-size;
   color: $body-color;
+  @media (max-width: 760px) {
+    background-color: darkslategray;
+  }
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -22,13 +29,46 @@ header {
 }
 
 .container {
-  width: 80%;
+  width: 60%;
   padding: 20px 0;
   margin: 0 auto;
+  @media (max-width: 1280px) {
+    width: 90%;
+  }
 }
 
-@media (max-width: 760px) {
-  body {
-    background-color: darkslategray;
+.home {
+  background: $header-bg;
+  background-repeat: repeat-x;
+  background-position: 0 -10px;
+  padding-top: 100px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem 0 14rem 0;
+  color: $white;
+
+  .banner-text {
+    width: 50%;
+
+    a {
+      position: absolute;
+      text-align: center;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      font-weight: $font-weight-bold;
+      color: #fff;
+      padding: 12px 30px;
+      margin: 1rem 0 0;
+      border-radius: 50px;
+      background-color: $secondary;
+
+      &:hover {
+        background-color: darken($secondary, 10%);
+      }
+    }
   }
 }

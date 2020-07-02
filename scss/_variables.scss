@@ -1,33 +1,30 @@
 ////////// COLOR SYSTEM //////////
 
-$theme-colors: (
-  primary: #3c37f1,
-  secondary: #1998ff,
-  success: #00d663,
-  info: #00b3ff,
-  warning: #ffe671,
-  danger: #ff696d,
-  light: #506690,
-  dark: #000000,
-);
+$primary: #3c37f1;
+$secondary: #1998ff;
+$success: #00d663;
+$info: #00b3ff;
+$warning: #ffe671;
+$danger: #ff696d;
+$light: #506690;
+$dark: #000000;
+$white: #ffffff;
 
 $content-bg: #fff;
 $border-color: #f1efef;
 
 ////////// SOCIAL COLORS //////////
 
-$social-colors: (
-  twitter: #2caae1,
-  facebook: #3b579d,
-  google: #dc4a38,
-  linkedin: #0177b5,
-  pinterest: #cc2127,
-  youtube: #e52d27,
-  github: #333333,
-  behance: #1769ff,
-  dribbble: #ea4c89,
-  reddit: #ff4500,
-);
+$twitter: #2caae1;
+$facebook: #3b579d;
+$google: #dc4a38;
+$linkedin: #0177b5;
+$pinterest: #cc2127;
+$youtube: #e52d27;
+$github: #333333;
+$behance: #1769ff;
+$dribbble: #ea4c89;
+$reddit: #ff4500;
 
 ////////// FONTS //////////
 
@@ -43,7 +40,7 @@ $body-color: #000;
 
 ////////// HEADER //////////
 
-$header-bg: url("../images/banner-bg.svg");
+$header-bg: url("../img/banner-bg.svg");
 $header-color: #fff;
 $nav-link-color: #fff;
 $nav-link-hover-color: #fff;

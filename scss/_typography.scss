@@ -1,0 +1,16 @@
+h1 {
+  font-size: 3rem;
+  font-weight: $font-weight-bold;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+  @media (max-width: 1280px) {
+    font-size: 1.75rem;
+  }
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: $font-weight-regular;
+  line-height: normal;
+  margin: 1rem 0 0.5rem 0;
+}
