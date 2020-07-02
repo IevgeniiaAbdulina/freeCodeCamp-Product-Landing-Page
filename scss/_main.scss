@@ -14,9 +14,6 @@ body {
   font-family: $type1;
   font-size: $default-font-size;
   color: $body-color;
-  @media (max-width: 760px) {
-    background-color: darkslategray;
-  }
 }
 
 a {
@@ -25,14 +22,19 @@ a {
 
 section {
   padding: 100px 0 0 0;
+  @media (max-width: 991px) {
+    padding: 70px 0 0 0;
+  }
 }
 
 .container {
   width: 60%;
   padding: 20px 0;
   margin: 0 auto;
+
   @media (max-width: 1280px) {
     width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -56,13 +58,20 @@ header {
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 2.2rem 0 14rem 0;
   color: $white;
+  @media (max-width: 991px) {
+    padding: 1rem;
+  }
 
   .banner-text {
     width: 50%;
+    @media (max-width: 991px) {
+      width: 100%;
+    }
 
     a {
       position: absolute;
@@ -82,6 +91,19 @@ header {
       }
     }
   }
+
+  .banner-img {
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-top: 6rem;
+    }
+
+    img {
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
 }
 
 // ================= SERVICES SECTION ================= //
@@ -94,6 +116,13 @@ header {
     flex: 0 0 33.3%;
     max-width: 33.3%;
     text-align: left;
+    @media (max-width: 991px) {
+      position: relative;
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   .col-box {
@@ -102,6 +131,15 @@ header {
 
   .services-box {
     padding: 10px 100px 40px 0;
+    @media (max-width: 991px) {
+      padding: 10px 10px 40px 0;
+    }
+    &:hover {
+      img {
+        filter: grayscale(100%);
+        transition: all 2s;
+      }
+    }
 
     p {
       color: $light;
@@ -120,6 +158,12 @@ header {
     flex: 0 0 50%;
     max-width: 50%;
     text-align: left;
+    @media (max-width: 991px) {
+      position: relative;
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+    }
   }
 
   .box {
@@ -165,6 +209,12 @@ header {
   iframe {
     width: 80%;
     height: 60%;
+    @media (max-width: 991px) {
+      position: relative;
+      top: 3rem;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
@@ -192,6 +242,12 @@ header {
   .col-contact {
     flex: 0 0 50%;
     max-width: 50%;
+    @media (max-width: 991px) {
+      position: relative;
+      flex: 0 0 100%;
+      max-width: 100%;
+      width: 100%;
+    }
   }
 
   .box {
@@ -208,6 +264,12 @@ header {
       flex: 0 0 50%;
       max-width: 50%;
       align-items: center;
+      @media (max-width: 991px) {
+        position: relative;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+      }
     }
 
     .box {
@@ -223,8 +285,12 @@ header {
       color: $light;
       background-color: #fff;
       border: 1px solid $border-color;
-      border-radius: 0.25rem;
+      border-radius: 50px;
       outline: 0;
+      @media (max-width: 991px) {
+        margin: 1rem 0;
+        width: 90%;
+      }
     }
 
     a {
@@ -239,6 +305,10 @@ header {
       background-color: $secondary;
       position: absolute;
       transition: 0.2s;
+      @media (max-width: 991px) {
+        margin-left: 0;
+        margin: 1rem 0;
+      }
 
       &:hover {
         background-color: darken($secondary, 10%);
@@ -254,6 +324,10 @@ footer {
   text-align: center;
   background-color: $footer-bg;
   color: $footer-color;
+  @media (max-width: 991px) {
+    padding: 2.25rem;
+    line-height: 1.5;
+  }
 
   a {
     color: $danger;

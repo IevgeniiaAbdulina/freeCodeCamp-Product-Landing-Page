@@ -10,6 +10,10 @@ nav {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 760px) {
+      display: none;
+    }
   }
 
   li {

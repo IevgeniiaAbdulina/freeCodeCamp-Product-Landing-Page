@@ -8,6 +8,30 @@
 /* === Core Styles === */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900");
+footer {
+  padding: 3rem;
+  text-align: center;
+  background-color: rgba(60, 55, 241, 0.8);
+  color: #e5e5e5;
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding: 2.25rem;
+    line-height: 1.5;
+  }
+}
+
+footer a {
+  color: #ff696d;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  color: #ffe671;
+  text-decoration: underline;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,18 +48,18 @@ body {
   color: #000;
 }
 
-@media (max-width: 760px) {
-  body {
-    background-color: darkslategray;
-  }
-}
-
 a {
   text-decoration: none;
 }
 
 section {
   padding: 100px 0 0 0;
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 70px 0 0 0;
+  }
 }
 
 .container {
@@ -47,6 +71,7 @@ section {
 @media (max-width: 1280px) {
   .container {
     width: 90%;
+    margin: 0 auto;
   }
 }
 
@@ -66,14 +91,27 @@ header {
 
 .banner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 2.2rem 0 14rem 0;
   color: #ffffff;
 }
 
+@media (max-width: 991px) {
+  .banner {
+    padding: 1rem;
+  }
+}
+
 .banner .banner-text {
   width: 50%;
+}
+
+@media (max-width: 991px) {
+  .banner .banner-text {
+    width: 100%;
+  }
 }
 
 .banner .banner-text a {
@@ -94,6 +132,19 @@ header {
   background-color: #007ee5;
 }
 
+@media (max-width: 991px) {
+  .banner .banner-img {
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner .banner-img img {
+    width: 100%;
+  }
+}
+
 .services-content {
   display: flex;
   flex-wrap: wrap;
@@ -105,12 +156,33 @@ header {
   text-align: left;
 }
 
+@media (max-width: 991px) {
+  .services-content .col {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .services-content .col-box {
   padding: 0 14px;
 }
 
 .services-content .services-box {
   padding: 10px 100px 40px 0;
+}
+
+@media (max-width: 991px) {
+  .services-content .services-box {
+    padding: 10px 10px 40px 0;
+  }
+}
+
+.services-content .services-box:hover img {
+  filter: grayscale(100%);
+  transition: all 2s;
 }
 
 .services-content .services-box p {
@@ -127,6 +199,15 @@ header {
   flex: 0 0 50%;
   max-width: 50%;
   text-align: left;
+}
+
+@media (max-width: 991px) {
+  .about-content .col-about {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .about-content .box {
@@ -170,6 +251,15 @@ header {
   height: 60%;
 }
 
+@media (max-width: 991px) {
+  .about-video iframe {
+    position: relative;
+    top: 3rem;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .contact {
   background: #3c37f1 url(../img/footer_bg.svg);
   background-repeat: repeat-x;
@@ -195,6 +285,15 @@ header {
   max-width: 50%;
 }
 
+@media (max-width: 991px) {
+  .contact-content .col-contact {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .contact-content .box {
   padding: 0 14px;
 }
@@ -210,6 +309,15 @@ header {
   align-items: center;
 }
 
+@media (max-width: 991px) {
+  .contact-form form .col-contact {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .contact-form form .box {
   padding: 0 14px;
   height: 100%;
@@ -223,8 +331,15 @@ header {
   color: #506690;
   background-color: #fff;
   border: 1px solid #f1efef;
-  border-radius: 0.25rem;
+  border-radius: 50px;
   outline: 0;
+}
+
+@media (max-width: 991px) {
+  .contact-form form input {
+    margin: 1rem 0;
+    width: 90%;
+  }
 }
 
 .contact-form form a {
@@ -241,6 +356,13 @@ header {
   transition: 0.2s;
 }
 
+@media (max-width: 991px) {
+  .contact-form form a {
+    margin-left: 0;
+    margin: 1rem 0;
+  }
+}
+
 .contact-form form a:hover {
   background-color: #007ee5;
 }
@@ -250,6 +372,13 @@ footer {
   text-align: center;
   background-color: rgba(60, 55, 241, 0.8);
   color: #e5e5e5;
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding: 2.25rem;
+    line-height: 1.5;
+  }
 }
 
 footer a {
@@ -314,6 +443,12 @@ nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media (max-width: 760px) {
+  nav ul {
+    display: none;
+  }
 }
 
 nav li {
