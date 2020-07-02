@@ -54,6 +54,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 3;
   background-color: #3c37f1;
 }
 
@@ -113,6 +114,58 @@ header {
 
 .services-content .services-box p {
   color: #506690;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-content .col-about {
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: left;
+}
+
+.about-content .box {
+  padding: 0 14px;
+}
+
+.about-text h5:nth-child(3) {
+  margin: 0 0 1.25rem;
+}
+
+.about-text p {
+  color: #506690;
+  margin: 0 0 1.5rem;
+}
+
+.about-text .list-item {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.about-text .list-item p {
+  margin: 0;
+}
+
+.tick-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.about-video {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.about-video iframe {
+  min-width: 360px;
+  min-height: 200px;
 }
 
 h1 {
