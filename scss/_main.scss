@@ -75,6 +75,7 @@ header {
       margin: 1rem 0 0;
       border-radius: 50px;
       background-color: $secondary;
+      transition: 0.2s;
 
       &:hover {
         background-color: darken($secondary, 10%);
@@ -237,10 +238,30 @@ header {
       border-radius: 50px;
       background-color: $secondary;
       position: absolute;
+      transition: 0.2s;
 
       &:hover {
         background-color: darken($secondary, 10%);
       }
+    }
+  }
+}
+
+// ================= FOOTER ================= //
+
+footer {
+  padding: 3rem;
+  text-align: center;
+  background-color: $footer-bg;
+  color: $footer-color;
+
+  a {
+    color: $danger;
+    transition: 0.2s;
+
+    &:hover {
+      color: $warning;
+      text-decoration: underline;
     }
   }
 }

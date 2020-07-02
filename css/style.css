@@ -87,6 +87,7 @@ header {
   margin: 1rem 0 0;
   border-radius: 50px;
   background-color: #1998ff;
+  transition: 0.2s;
 }
 
 .banner .banner-text a:hover {
@@ -237,10 +238,28 @@ header {
   border-radius: 50px;
   background-color: #1998ff;
   position: absolute;
+  transition: 0.2s;
 }
 
 .contact-form form a:hover {
   background-color: #007ee5;
+}
+
+footer {
+  padding: 3rem;
+  text-align: center;
+  background-color: rgba(60, 55, 241, 0.8);
+  color: #e5e5e5;
+}
+
+footer a {
+  color: #ff696d;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  color: #ffe671;
+  text-decoration: underline;
 }
 
 h1 {
